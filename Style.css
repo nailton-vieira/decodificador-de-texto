@@ -1,0 +1,10 @@
+body {
+      background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-position-x: initial;
+    margin: 0%;
+    padding: 0%;
+    background-color: #6e7072;
+    width: 100%;
+}
