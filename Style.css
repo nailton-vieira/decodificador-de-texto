@@ -1,10 +1,214 @@
+:root {
+  --color-l-bg-and-contrast: #b1b5b9;
+  --color-l-bg-inative-edit: #EDEDED;
+  --color-l-primary: #110F0F;
+  --color-l-secondary: #008CDB;
+  --color-l-secondary-hover: #4DBEFF;
+  --color-l-alternative: #7b9eb3;
+
+  --font-size-primary: 1.25rem;
+  --font-size-secondary: 0.875rem;
+  --font-size-alternative: 0.75rem;
+
+  --font-size-mobile-primary: 1rem;
+  --font-size-mobile-alternative: 0.625rem;
+}
+
 body {
-      background-size: 500px 500px;
-    background-repeat: no-repeat;
-    background-position: 10px;
-    background-position-x: initial;
-    margin: 0%;
-    padding: 0%;
-    background-color: #6e7072;
+    background-color: var(--color-l-bg-and-contrast);
+    color: var(--color-l-primary);
+}
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.5%;
+  width: 12rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-l-alternative);
+  background-color: var(--color-l-secondary);
+  color: var(--color-l-bg-and-contrast);
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.725% 5%;
+}
+
+.main__input,
+.main__output {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.main__input {
+  align-items: center;
+}
+
+.main__output {
+  align-items: end;
+}
+
+#main__input__text,
+#main__output__text {
+  font-size: var(--font-size-primary);
+  border: 0.125px solid var(--color-l-alternative);
+  line-height: 2.2rem;
+  resize: none;
+  outline: none;
+  height: 11.875rem;
+  width: 100%;
+  padding: 8%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  border-radius: 2.5rem 0rem 0rem 2.5rem;
+}
+
+#main__output__text {
+  background-color: var(--color-l-bg-inative-edit);
+}
+
+#main__input__text::-webkit-scrollbar,
+#main__output__text::-webkit-scrollbar {
+  width: 1.25rem;
+  background-color: var(--color-l-alternative);
+  }
+
+#main__input__text::-webkit-scrollbar-thumb,
+#main__output__text::-webkit-scrollbar-thumb {
+  background-color: var(--color-l-secondary);
+  border-radius: 0rem 0.625rem 0.625rem 0rem;
+}
+
+.main__input__warning {
+  display: flex;
+  align-items: center;
+  gap: 0.425rem;
+  font-size: var(--font-size-alternative);
+}
+
+#main__input__warning__icon {
+  user-select: none;
+  text-align: center;
+  color: white;
+  border: 0.125px solid var(--color-l-primary);
+  border-radius: 100%;
+  background-color: var(--color-l-secondary);
+  width: 1.1rem;
+}
+
+.main__input__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+/* MIDIA */
+@media (max-width: 800px) {
+  button {
     width: 100%;
+  }
+
+  #main__input__text,
+  #main__output__text {
+    line-height: 1.5rem;
+    padding: 10%;
+    font-size: var(--font-size-mobile-primary);
+  }
+
+  .main__input,
+  .main__output {
+    width: 46%;
+    gap: 0.9rem;
+  }
+
+  .main__output {
+    justify-content: flex-start;
+    gap: 2.875rem;
+  }
+
+  .main__input__buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.9rem;
+  }
+
+  .main__input__warning {
+    display: flex;
+    align-items: center;
+    gap: 0.425rem;
+    font-size: var(--font-size-mobile-alternative);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .main__input,
+  .main__output {
+    width: 100%;
+    gap: 0.9rem;
+  }
+
+  #main__input__text,
+  #main__output__text {
+    padding: 8% 15%;
+    height: 12.5rem;
+  }
+
+  .main__output {
+    justify-content: flex-start;
+  }
+}
+
+
+footer {
+  display: flex;
+  position: absolute; 
+  flex-direction: column;
+  text-align: center;    
+  font-size: 18px;
+  color: #0A3871;
+  height: 3.5rem; 
+  width: 100%; 
+  bottom: 0px;
+}
+
+.redes-sociais a img {
+  filter: invert(0%);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  padding: 4px;
+}
+
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+}
+
+.redes-sociais a img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 100%;
+  padding: 8px;
+}
+
+.redes-sociais a:hover {
+transform: scale(1.5);
 }
