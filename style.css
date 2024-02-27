@@ -1,8 +1,10 @@
+
+/* Definições*/
 :root {
   --color-l-bg-and-contrast: #b1b5b9;
   --color-l-bg-inative-edit: #EDEDED;
   --color-l-primary: #110F0F;
-  --color-l-secondary: #008CDB;
+  --color-l-secondary: #024a74;
   --color-l-secondary-hover: #4DBEFF;
   --color-l-alternative: #7b9eb3;
 
@@ -14,9 +16,18 @@
   --font-size-mobile-alternative: 0.625rem;
 }
 
+/* Reset */
+* {
+  margin : 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
 body {
     background-color: var(--color-l-bg-and-contrast);
     color: var(--color-l-primary);
+    height: 100vh;
 }
 
 button {
@@ -29,6 +40,25 @@ button {
   background-color: var(--color-l-secondary);
   color: var(--color-l-bg-and-contrast);
   border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+footer {
+  display: flex;
+  position: relative; 
+  flex-direction: column;
+  text-align: center;    
+  font-size: 18px;
+  color: #0A3871;
+  height: 3.5rem; 
+  width: 100%; 
+  bottom: 0px;
+}
+
+.titulos {
+
+  color: var (--color-l-secondary)
+
 }
 
 .container {
@@ -174,18 +204,6 @@ button {
 }
 
 
-footer {
-  display: flex;
-  position: absolute; 
-  flex-direction: column;
-  text-align: center;    
-  font-size: 18px;
-  color: #0A3871;
-  height: 3.5rem; 
-  width: 100%; 
-  bottom: 0px;
-}
-
 .redes-sociais a img {
   filter: invert(0%);
   width: 30px;
@@ -194,12 +212,6 @@ footer {
   padding: 4px;
 }
 
-
-footer {
-  position: relative;
-  text-align: center;
-  bottom: 0;
-}
 
 .redes-sociais a img {
   width: 40px;

@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
 
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Codificador e Decodificador de texto</title>
-     <link rel="stylesheet" href="style.css">
+<head>
 
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
 
 <body>
 
     <header>
-        
+
         <img class="logo2" src="img/logo_criptografar1.png" alt="logo de criptografar">
         <img class="logo" src="img/logo_oracle_one_alura.png" alt="logo da alura">
-        
-        <h1 class="title">Desafio Alura + Oracle </h1>
+
+        <h1 class="title">Desafio Alura + Oracle </strong> </h1>
 
     </header>
     <main class="main">
         <div class="container">
             <div class="main__input">
-                <textarea
-                    id="main__input__text"
-                    placeholder="Digite seu texto aqui"
-                    spellcheck="false"
-                ></textarea>
+                <textarea id="main__input__text" placeholder="Digite seu texto aqui" spellcheck="false"></textarea>
 
                 <div class="main__input__warning">
-                    <div id="main__input__warning__icon" title="não é permitido acentuação, cedilha ou outros caracteres especiais, apenas letras minúsculas">!</div>
+                    <div id="main__input__warning__icon"
+                        title="não é permitido acentuação, cedilha ou outros caracteres especiais, apenas letras minúsculas">
+                        !</div>
                     <p id="main__input__warning__text">
-                        Letras minúsculas e sem símbolos
+                        Digite somente letras minúsculas e sem símbolos
                     </p>
                 </div>
 
                 <div class="main__input__buttons">
-                    <button onclick="handleEncrypt()">Criptografar</button>
-                    <button onclick="handleDecrypt()">Descriptografar</button>
+                    <button class="btn1">Criptografar</button>
+                    <button class="btn2">Descriptografar</button>
                 </div>
             </div>
 
             <div class="main__output">
-                <textarea
-                    readonly
-                    id="main__output__text"
-                    placeholder="Não há nada aqui ainda"
-                    spellcheck="false"
-                ></textarea>
-                <button id="copy-button-output" onclick="handleCopyOutput()">Copiar</button>
+                <textarea readonly id="main__output__text" placeholder="Não há nada aqui ainda"
+                    spellcheck="false"></textarea>
+                <button class="btn3" >Copiar</button>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&#169; 2024  Nailton Vieira </p>
-            
-            <div class="redes-sociais">
-                <a href="https://github.com/nailton-vieira"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github icone"></a>
-                <a href="https://www.instagram.com//"><img src="img/instagram.png" alt="instagram icone"></a>
-                <a href="https://www.linkedin.com/in/nailtonvieira"><img src="img/linkedin.png"alt="linkedin icone"></a>
-            </div>  
-        
+        <p>&#169; 2024 Nailton Vieira </p>
+
+        <div class="redes-sociais">
+            <a href="https://github.com/nailton-vieira"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="github icone"></a>
+            <a href="https://www.instagram.com/nailtonvieira.inforsoft"><img src="img/instagram.png"
+                    alt="instagram icone"></a>
+            <a href="https://www.linkedin.com/in/nailtonvieira"><img src="img/linkedin.png" alt="linkedin icone"></a>
+        </div>
+
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
